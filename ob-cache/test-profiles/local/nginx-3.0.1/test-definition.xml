@@ -54,10 +54,6 @@
           <Name>1000</Name>
           <Value>1000</Value>
         </Entry>
-        <Entry>
-          <Name>4000</Name>
-          <Value>4000</Value>
-        </Entry>
       </Menu>
     </Option>
   </TestSettings>
