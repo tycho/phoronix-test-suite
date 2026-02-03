@@ -616,7 +616,7 @@ class pts_test_run_manager
 			$results_identifier = phodevi::read_property('cpu', 'model') . ' - ' . phodevi::read_property('gpu', 'model') . ' - ' . phodevi::read_property('motherboard', 'identifier');
 		}
 
-		if(strlen($results_identifier) > 55)
+		if(!empty($results_identifier) && strlen($results_identifier) > 55)
 		{
 			$results_identifier = substr($results_identifier, 0, 54);
 			$results_identifier = substr($results_identifier, 0, strrpos($results_identifier, ' '));
