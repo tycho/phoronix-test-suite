@@ -40,7 +40,7 @@ if [ "$threads" -gt "$connections" ]; then
     threads="$connections"
 fi
 
-./wrk-4.2.0/wrk -d 90s -t $threads -c $connections $2 > $LOG_FILE 2>&1
+./wrk-4.2.0/wrk -d 15s -t $threads -c $connections $2 > $LOG_FILE 2>&1
 echo $? > ~/test-exit-status
 EOF
 chmod +x nginx
