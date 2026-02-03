@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>| llama 8B Q8_0                  |   7.95 GiB |     8.03 B | BLAS       |        128 |         tg128 |      #_RESULT_# &#xB1; 0.29 |</OutputTemplate>
+    <LineHint>&#xB1;</LineHint>
+    <ResultBeforeString>&#xB1;</ResultBeforeString>
+  </ResultsParser>
+</PhoronixTestSuite>

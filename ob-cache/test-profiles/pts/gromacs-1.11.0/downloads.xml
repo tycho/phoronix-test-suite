@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>http://ftp.gromacs.org/gromacs/gromacs-2025.4.tar.gz</URL>
+      <MD5>733448146f1f0555c9fd8d7a5d14ac7b</MD5>
+      <SHA256>ca17720b4a260eb73649211e9f6a940ee7543452129844213c3accb0a927a5c3</SHA256>
+      <FileName>gromacs-2025.4.tar.gz</FileName>
+      <FileSize>44406127</FileSize>
+    </Package>
+    <Package>
+      <URL>http://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz</URL>
+      <MD5>d843376d598299d6a209dae063157dc5</MD5>
+      <SHA256>2219c10acb97787f80f6638132bad3ff2ca1e68600eef1bc8b89d9560e74c66a</SHA256>
+      <FileName>water_GMX50_bare.tar.gz</FileName>
+      <FileSize>138438061</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

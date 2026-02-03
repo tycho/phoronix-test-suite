@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/ggerganov/llama.cpp/archive/refs/tags/b4397.tar.gz</URL>
+      <MD5>3c471c3828bd4bdb054fba7c9427d3c5</MD5>
+      <SHA256>51e5ac9b5c18756cf46ebc0659dcd57542800dc6582bbdf737dee064aaebfa34</SHA256>
+      <FileName>llama.cpp-b4397.tar.gz</FileName>
+      <FileSize>20603283</FileSize>
+    </Package>
+    <Package>
+      <URL>https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF/resolve/7033c16b4f79f8708a27d80bf2ae0c6537253d1b/Llama-3.1-Tulu-3-8B-Q8_0.gguf?download=true</URL>
+      <MD5>68a32ec44ea01a92c116a0b6fb83eae8</MD5>
+      <SHA256>388db24ac65abaf1cd9dc9a0fc8d5aaebde5df908048b89c8cf3c2cec92562ef</SHA256>
+      <FileName>Llama-3.1-Tulu-3-8B-Q8_0.gguf</FileName>
+      <FileSize>8540841632</FileSize>
+      <Optional>TRUE</Optional>
+    </Package>
+    <Package>
+      <URL>https://huggingface.co/lmstudio-community/granite-3.0-3b-a800m-instruct-GGUF/resolve/46f75d55362bc1d5152541ec9579d38381ad7a59/granite-3.0-3b-a800m-instruct-Q8_0.gguf?download=true</URL>
+      <MD5>faec97f7c662b271864eef04879d35fa</MD5>
+      <SHA256>441d5c1195113695a10afb0ce7c105e9fc3c8c6d12960dab1716474326668b41</SHA256>
+      <FileName>granite-3.0-3b-a800m-instruct-Q8_0.gguf</FileName>
+      <FileSize>3592999808</FileSize>
+      <Optional>TRUE</Optional>
+    </Package>
+    <Package>
+      <URL>https://huggingface.co/lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF/resolve/29a785419661afc70b5cd91b5023a835b0092281/Mistral-7B-Instruct-v0.3-Q8_0.gguf?download=true</URL>
+      <MD5>5bc8f99351f114d3a323b9f7d1da846a</MD5>
+      <SHA256>404857e776114baada71a08ebd3bba79d721ec7fca99705e7e7b892ae8bc583f</SHA256>
+      <FileName>Mistral-7B-Instruct-v0.3-Q8_0.gguf</FileName>
+      <FileSize>7702565088</FileSize>
+      <Optional>TRUE</Optional>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

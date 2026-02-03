@@ -1,0 +1,1 @@
+{"1.2.0":{"last_updated":"1767988483","commit_description":"Update against MariaDB 12.3."},"1.1.0":{"last_updated":"1744493318","commit_description":"Update against MariaDB 12.0 to fix GCC 15 build issues."},"1.0.0":{"last_updated":"1711293006","commit_description":"Add a MariaDB test using sysbench rather than pts\/mysqlslap."}}

@@ -1,0 +1,1 @@
+{"overview":[],"capabilities":{"shared_libraries":["libFLAC.so.14","libm.so.6","libc.so.6","libogg.so.0"],"default_instructions":["MMX","SSE","SSE2","SSSE3","SSE4_1","SSE4_2","AVX","AVX2","FMA"],"max_instructions":["MMX","SSE","SSE2","SSSE3","SSE4_1","SSE4_2","AVX","AVX2","FMA","AVX512"],"honors_cflags":"1","scales_cpu_cores":"0"}}

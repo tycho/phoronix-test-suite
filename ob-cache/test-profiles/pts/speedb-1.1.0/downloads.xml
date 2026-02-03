@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/speedb-io/speedb/archive/refs/tags/speedb/v2.8.0.tar.gz</URL>
+      <MD5>41ef81071cb26064855c9dc30a818aa9</MD5>
+      <SHA256>ee7a55942a23d9589e5d3527364a2f9ae552ef7d52f6fd303dda25e4f27786ba</SHA256>
+      <FileName>speedb-speedb-v2.8.0.tar.gz</FileName>
+      <FileSize>19439532</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

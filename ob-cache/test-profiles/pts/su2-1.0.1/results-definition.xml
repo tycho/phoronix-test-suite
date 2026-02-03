@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>   Wall-clock time (hrs):  #_RESULT_# |            Core-hrs:    0.463262</OutputTemplate>
+    <LineHint>Wall-clock time (hrs)</LineHint>
+    <MultiplyResultBy>3600</MultiplyResultBy>
+  </ResultsParser>
+</PhoronixTestSuite>

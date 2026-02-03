@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/minion/minion/archive/5c9f347c864bc2b64684b1df9d366294c21aac49.zip</URL>
+      <MD5>69a0297ec267c451f7aba9f7732c4c85</MD5>
+      <SHA256>ab52d1b0ddc6d611898714454eb8a298d14f2cbb6e727c4de103c8e1d0ee4e44</SHA256>
+      <FileName>minion-5c9f347c864bc2b64684b1df9d366294c21aac49.zip</FileName>
+      <FileSize>7170094</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

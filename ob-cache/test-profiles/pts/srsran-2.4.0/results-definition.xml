@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate> PUSCH RB=273 Mod=256QAM R=0.926 rv=0 n_layers=1 - 639.6 Mbps |  2549.9|  2548.1|  2544.9|  #_RESULT_#  2527.1|  2527.1|  2527.1|</OutputTemplate>
+    <LineHint>n_layers=1</LineHint>
+    <MultiMatch>GEOMETRIC_MEAN</MultiMatch>
+    <ResultScale>Mbps</ResultScale>
+    <TurnCharsToSpace>|</TurnCharsToSpace>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate> PDSCH BW=26  Mod=QPSK   R=0.117 -   0.9 Mbps|    55.3|    55.1|    54.5|    #_RESULT_#    50.0|    16.3|</OutputTemplate>
+    <LineHint>PDSCH</LineHint>
+    <MultiMatch>GEOMETRIC_MEAN</MultiMatch>
+    <ResultScale>Mbps</ResultScale>
+    <TurnCharsToSpace>|</TurnCharsToSpace>
+  </ResultsParser>
+</PhoronixTestSuite>

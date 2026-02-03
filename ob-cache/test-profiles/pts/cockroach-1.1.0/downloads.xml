@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://binaries.cockroachdb.com/cockroach-v25.3.6.linux-amd64.tgz</URL>
+      <MD5>f8645bc533b6cd7eb6cc1c0e6adbb49f</MD5>
+      <SHA256>eeb6a04b97ea008a71ce4e5f68fc0d139e0744f9b6e85d961078be532dbeef15</SHA256>
+      <FileName>cockroach-v25.3.6.linux-amd64.tgz</FileName>
+      <FileSize>138494412</FileSize>
+      <ArchitectureSpecific>x86_64</ArchitectureSpecific>
+    </Package>
+    <Package>
+      <URL>https://binaries.cockroachdb.com/cockroach-v25.3.6.linux-arm64.tgz</URL>
+      <MD5>2d25a7cad73046a29acd41a9d933967f</MD5>
+      <SHA256>51b85648ee30ae503d600ce0f5319f156e7e87a03fa083d011629de40d2779c8</SHA256>
+      <FileName>cockroach-v25.3.6.linux-arm64.tgz</FileName>
+      <FileSize>129124763</FileSize>
+      <ArchitectureSpecific>aarch64</ArchitectureSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

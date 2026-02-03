@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>OpenVINO GenAI</Title>
+    <AppVersion>2025.4.1</AppVersion>
+    <Description>This is a benchmark of OpenVINO GenAI that makes use of Intel OpenVINO, a toolkit around neural networks / AI. Complementing the pts/openvino test profile, pts/openvino-genai is focused on Generative AI (GenAI) LLM performance.</Description>
+    <ResultScale>tokens/s</ResultScale>
+    <Proportion>HIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.2.0</Version>
+    <SupportedPlatforms>Linux</SupportedPlatforms>
+    <SoftwareType>Utility</SoftwareType>
+    <TestType>System</TestType>
+    <License>Free</License>
+    <Status>Verified</Status>
+    <ExternalDependencies>python, build-utilities, cmake</ExternalDependencies>
+    <InstallRequiresInternet>TRUE</InstallRequiresInternet>
+    <EnvironmentSize>35800</EnvironmentSize>
+    <ProjectURL>https://docs.openvino.ai/2024/get-started/install-openvino/install-openvino-genai.html</ProjectURL>
+    <RepositoryURL>https://github.com/openvinotoolkit/openvino.genai</RepositoryURL>
+    <Maintainer>Michael Larabel</Maintainer>
+    <SystemDependencies>git-lfs</SystemDependencies>
+  </TestProfile>
+  <TestSettings>
+    <Default>
+      <Arguments>-n 10</Arguments>
+    </Default>
+    <Option>
+      <DisplayName>Model</DisplayName>
+      <Identifier>model</Identifier>
+      <ArgumentPrefix>-m </ArgumentPrefix>
+      <Menu>
+        <Entry>
+          <Name>TinyLlama-1.1B-Chat-v1.0</Name>
+          <Value>TinyLlama-1.1B-Chat-v1.0</Value>
+        </Entry>
+        <Entry>
+          <Name>granite-3.0-8b-instruct</Name>
+          <Value>granite-3.0-8b-instruct</Value>
+        </Entry>
+      </Menu>
+    </Option>
+    <Option>
+      <DisplayName>Device</DisplayName>
+      <Identifier>Device</Identifier>
+      <ArgumentPrefix>-d </ArgumentPrefix>
+      <Menu>
+        <Entry>
+          <Name>CPU</Name>
+          <Value>CPU</Value>
+        </Entry>
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>

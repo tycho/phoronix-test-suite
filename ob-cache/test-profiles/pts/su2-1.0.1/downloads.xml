@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/su2code/SU2/archive/refs/tags/v8.3.0.tar.gz</URL>
+      <MD5>f0a75af0dc303d449761eeb9d59e2122</MD5>
+      <SHA256>33079d7988ea3bd8b0020f5c8a33b27caea6e357c1cb78fda8b1508c594444ef</SHA256>
+      <FileName>SU2-8.3.0.tar.gz</FileName>
+      <FileSize>18842822</FileSize>
+    </Package>
+    <Package>
+      <URL>https://github.com/su2code/VandV/archive/22a332493b996666039ceef537bbd520399eb427.zip</URL>
+      <MD5>789f11a162684ac88428d25dca34c7f5</MD5>
+      <SHA256>3ba36a1f4595555a4e5fa7d689cc76b2ba69b3f754b95aed77684173b92a6916</SHA256>
+      <FileName>VandV-22a332493b996666039ceef537bbd520399eb427.zip</FileName>
+      <FileSize>130141262</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

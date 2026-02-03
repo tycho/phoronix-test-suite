@@ -1,0 +1,1 @@
+{"1.1.0":{"last_updated":"1767994552","commit_description":"Update against Git to fix build breakage on modern distros."},"1.0.1":{"last_updated":"1731772090","commit_description":"Fix build with newer compilers\/distributions."},"1.0.0":{"last_updated":"1687124780","commit_description":"Initial upload of Laghos."}}

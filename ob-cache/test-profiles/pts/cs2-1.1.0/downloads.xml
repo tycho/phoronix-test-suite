@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>http://www.phoronix-test-suite.com/benchmark-files/cs2-pts2.zip</URL>
+      <MD5>c5e2140cb35b8a59d82f0531b22b9757</MD5>
+      <SHA256>63d614a86722f8dce7eb3dffae7f685418e75ffdbadeaa3d27aa599bd500e945</SHA256>
+      <FileName>cs2-pts2.zip</FileName>
+      <FileSize>1718904</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

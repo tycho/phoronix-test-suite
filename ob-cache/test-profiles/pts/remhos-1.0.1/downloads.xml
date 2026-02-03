@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/hypre-space/hypre/archive/refs/tags/v2.28.0.tar.gz</URL>
+      <MD5>82cb3018fb1a0bf4aeb49d51d291784a</MD5>
+      <SHA256>2eea68740cdbc0b49a5e428f06ad7af861d1e169ce6a12d2cf0aa2fc28c4a2ae</SHA256>
+      <FileName>hypre-2.28.0.tar.gz</FileName>
+      <FileSize>6801191</FileSize>
+    </Package>
+    <Package>
+      <URL>https://github.com/mfem/tpls/raw/gh-pages/metis-4.0.3.tar.gz</URL>
+      <MD5>d3848b454532ef18dc83e4fb160d1e10</MD5>
+      <SHA256>5efa35de80703c1b2c4d0de080fafbcf4e0d363a21149a1ad2f96e0144841a55</SHA256>
+      <FileName>metis-4.0.3.tar.gz</FileName>
+      <FileSize>522624</FileSize>
+    </Package>
+    <Package>
+      <URL>https://github.com/mfem/mfem/archive/refs/tags/v4.7.tar.gz</URL>
+      <MD5>ba7009722dabf48f66b4f48097e59c36</MD5>
+      <SHA256>731bc2665c13d4099f9c9c946eb83ab07cd2e78a9575d4fa62a96cdb40d6ba0f</SHA256>
+      <FileName>mfem-4.7.tar.gz</FileName>
+      <FileSize>3808224</FileSize>
+    </Package>
+    <Package>
+      <URL>https://github.com/CEED/Remhos/archive/c9c5e05736645ab72e88037df5428390a0ad5348.zip</URL>
+      <MD5>a7432048ba65203b6a99b9b3acc25c5f</MD5>
+      <SHA256>0b32f64f6562ec6357d89e4a2d447ffd7a2e8159a05c9e6d053bb2a411e73818</SHA256>
+      <FileName>Remhos-c9c5e05736645ab72e88037df5428390a0ad5348.zip</FileName>
+      <FileSize>2565348</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

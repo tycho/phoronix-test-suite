@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>ZZZ Solve                                                                   |     1  #_RESULT_#  31.798945</OutputTemplate>
+    <LineHint>ZZZ Solve</LineHint>
+  </ResultsParser>
+</PhoronixTestSuite>

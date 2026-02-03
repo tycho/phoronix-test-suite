@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/wrf-model/WRF/releases/download/v4.7.1/v4.7.1.tar.gz</URL>
+      <MD5>d586ff56f14429a71fa9a34f7e9fa6e8</MD5>
+      <SHA256>11186188b033d26332e31769c1f7aff9349406920a7f72eeb256d5881f7223f4</SHA256>
+      <FileName>WRF-4.7.1.tar.gz</FileName>
+      <FileSize>104140946</FileSize>
+    </Package>
+    <Package>
+      <URL>https://www2.mmm.ucar.edu/wrf/src/conus2.5km.tar.gz, https://tqi-public.s3.us-east-2.amazonaws.com/datasets/v2/conus2.5km.tar.gz</URL>
+      <FileName>conus2.5km.tar.gz</FileName>
+      <FileSize>19575738395</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

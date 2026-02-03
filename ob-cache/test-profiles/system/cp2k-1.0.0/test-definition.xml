@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>CP2K Molecular Dynamics</Title>
+    <Description>CP2K is an open-source molecular dynamics software package focused on quantum chemistry and solid-state physics. The system/cp2k test uses any OS/system-supplied cp2k as an alternative to the static pts/cp2k version.</Description>
+    <ResultScale>Seconds</ResultScale>
+    <Proportion>LIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.0</Version>
+    <SupportedPlatforms>Linux</SupportedPlatforms>
+    <SoftwareType>Benchmark</SoftwareType>
+    <TestType>Processor</TestType>
+    <License>Free</License>
+    <Status>Verified</Status>
+    <ExternalDependencies>openmpi-development</ExternalDependencies>
+    <EnvironmentSize>365</EnvironmentSize>
+    <ProjectURL>https://www.cp2k.org/</ProjectURL>
+    <RepositoryURL>https://github.com/cp2k/cp2k</RepositoryURL>
+    <InternalTags>SMP</InternalTags>
+    <Maintainer>Michael Larabel</Maintainer>
+    <SystemDependencies>cp2k.psmp</SystemDependencies>
+  </TestProfile>
+  <TestSettings>
+    <Option>
+      <DisplayName>Input</DisplayName>
+      <Identifier>input</Identifier>
+      <ArgumentPrefix>-i </ArgumentPrefix>
+      <Menu>
+        <Entry>
+          <Name>Fayalite-FIST</Name>
+          <Value>benchmarks/Fayalite-FIST/fayalite.inp</Value>
+        </Entry>
+        <Entry>
+          <Name>H20-64</Name>
+          <Value>benchmarks/QS/H2O-64.inp</Value>
+        </Entry>
+        <Entry>
+          <Name>H20-256</Name>
+          <Value>benchmarks/QS/H2O-256.inp</Value>
+        </Entry>
+        <Entry>
+          <Name>H20-512</Name>
+          <Value>benchmarks/QS/H2O-512.inp</Value>
+          <Message>Practical just for large servers.</Message>
+        </Entry>
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>ollama</Title>
+    <AppVersion>0.3.15</AppVersion>
+    <Description>This is a benchmark of the ollama AI framework for large language models (LLMs). This ollama benchmark looks at the throughput across several different prompts with a selectable LLM to use for the performance benchmarking. The desired model for benchmarking is downloaded on-demand during the pre-run phase.</Description>
+    <ResultScale>tokens/s</ResultScale>
+    <Proportion>HIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.0</Version>
+    <SupportedPlatforms>Linux</SupportedPlatforms>
+    <SoftwareType>Benchmark</SoftwareType>
+    <TestType>System</TestType>
+    <License>Free</License>
+    <Status>Verified</Status>
+    <SupportedArchitectures>x86_64, aarch64</SupportedArchitectures>
+    <InstallRequiresInternet>TRUE</InstallRequiresInternet>
+    <EnvironmentSize>13000</EnvironmentSize>
+    <ProjectURL>https://ollama.com/</ProjectURL>
+    <RepositoryURL>https://github.com/ollama/ollama</RepositoryURL>
+    <InternalTags>SMP</InternalTags>
+    <Maintainer>Michael Larabel</Maintainer>
+  </TestProfile>
+  <TestSettings>
+    <Option>
+      <DisplayName>Model</DisplayName>
+      <Identifier>Model</Identifier>
+      <Menu>
+        <Entry>
+          <Name>DeepSeek-r1 1.5B</Name>
+          <Value>deepseek-r1:1.5b</Value>
+          <Message>Small</Message>
+        </Entry>
+        <Entry>
+          <Name>Gemma 2B</Name>
+          <Value>gemma:2b</Value>
+          <Message>Small</Message>
+        </Entry>
+        <Entry>
+          <Name>Phi3 3.8B</Name>
+          <Value>phi3:3.8b</Value>
+          <Message>Small</Message>
+        </Entry>
+        <Entry>
+          <Name>llama3.2 8B</Name>
+          <Value>llama3.1:8b</Value>
+          <Message>Medium</Message>
+        </Entry>
+        <Entry>
+          <Name>DeepSeek-r1 8B</Name>
+          <Value>deepseek-r1:8b</Value>
+          <Message>Medium</Message>
+        </Entry>
+        <Entry>
+          <Name>DeepSeek-r1 14B</Name>
+          <Value>deepseek-r1:14b</Value>
+          <Message>Large</Message>
+        </Entry>
+        <Entry>
+          <Name>GPT-OSS 20B</Name>
+          <Value>gpt-oss:20b</Value>
+          <Message>Large</Message>
+        </Entry>
+        <Entry>
+          <Name>Phi4 14B</Name>
+          <Value>phi4:14b</Value>
+          <Message>Large</Message>
+        </Entry>
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>

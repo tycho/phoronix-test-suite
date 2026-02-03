@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>FEniCS Dolfinx</Title>
+    <AppVersion>0.10.0.post5</AppVersion>
+    <Description>Dolfinx from the FEniCS Project is a next-generation problem solving environment for solving partial differential equations (PDEs) with the finite element method (FEM). This test profile makes use of the Dolfinx performance-test.</Description>
+    <ResultScale>Seconds</ResultScale>
+    <Proportion>LIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.0</Version>
+    <SupportedPlatforms>Linux</SupportedPlatforms>
+    <SoftwareType>Scientific</SoftwareType>
+    <TestType>Processor</TestType>
+    <License>Free</License>
+    <Status>Verified</Status>
+    <ExternalDependencies>openmpi-development, build-utilities, cmake, boost-development</ExternalDependencies>
+    <EnvironmentSize>2300</EnvironmentSize>
+    <ProjectURL>https://fenicsproject.org/</ProjectURL>
+    <RepositoryURL>https://github.com/FEniCS/dolfinx</RepositoryURL>
+    <Maintainer>Michael Larabel</Maintainer>
+    <SystemDependencies>pugixml.hpp, libpugixml.so, spdlog/common.h, basix/types.h, /usr/lib/python3/dist-packages/ffcx/main.py, scotch/ptscotchf.h, petsc.h</SystemDependencies>
+  </TestProfile>
+  <TestSettings>
+    <Option>
+      <DisplayName>Problem</DisplayName>
+      <Identifier>problem</Identifier>
+      <Menu>
+        <Entry>
+          <Name>Elasticity</Name>
+          <Value>--problem_type elasticity --scaling_type strong --ndofs 25000000 -log_view -ksp_view -ksp_type cg -ksp_rtol 1.0e-8 -pc_type gamg -pc_gamg_coarse_eq_limit 1000 -mg_levels_ksp_type chebyshev -mg_levels_pc_type jacobi -mg_levels_esteig_ksp_type cg -matptap_via scalable -options_left</Value>
+        </Entry>
+        <Entry>
+          <Name>Poisson</Name>
+          <Value>--problem_type poisson --scaling_type strong --ndofs 10000000 -log_view -ksp_view -ksp_type cg -ksp_rtol 1.0e-8 -pc_type hypre -pc_hypre_type boomeramg -pc_hypre_boomeramg_strong_threshold 0.7 -pc_hypre_boomeramg_agg_nl 4 -pc_hypre_boomeramg_agg_num_paths 2 -options_left</Value>
+        </Entry>
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>
