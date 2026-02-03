@@ -38,10 +38,6 @@
           <Name>GPU</Name>
           <Value>0 1</Value>
         </Entry>
-        <Entry>
-          <Name>CPU+GPU</Name>
-          <Value>1 1</Value>
-        </Entry>
       </Menu>
     </Option>
   </TestSettings>
