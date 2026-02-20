@@ -49,23 +49,23 @@
         </Entry>
         <Entry>
           <Name>Syscall execve</Name>
-          <Value>syscall execve -l 3000</Value>
+          <Value>syscall execve -l 5000</Value>
         </Entry>
         <Entry>
           <Name>Syscall Fork</Name>
-          <Value>syscall fork -l 8000</Value>
+          <Value>syscall fork -l 10000</Value>
         </Entry>
         <Entry>
           <Name>Futex Hash</Name>
-          <Value>futex hash -r 5 -s</Value>
+          <Value>futex hash -r 7 -s</Value>
         </Entry>
         <Entry>
           <Name>Futex Lock-Pi</Name>
-          <Value>futex lock-pi -r 5 -s</Value>
+          <Value>futex lock-pi -r 7 -s</Value>
         </Entry>
         <Entry>
           <Name>Epoll Wait</Name>
-          <Value>epoll wait -r 5</Value>
+          <Value>epoll wait -r 7</Value>
         </Entry>
       </Menu>
     </Option>
