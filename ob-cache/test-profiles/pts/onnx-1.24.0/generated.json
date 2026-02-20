@@ -1,0 +1,1 @@
+{"overview":[],"capabilities":{"shared_libraries":["libonnxruntime.so.1.6.0","libdl.so.2","libpthread.so.0","libc.so.6","libgomp.so.1","libm.so.6"],"default_instructions":["MMX","SSE","SSE2","AVX","AVX2","AVX-VNNI","FMA"],"max_instructions":["MMX","SSE","SSE2","AVX","AVX2","AVX-VNNI","FMA"],"honors_cflags":"1","scales_cpu_cores":"0"}}
