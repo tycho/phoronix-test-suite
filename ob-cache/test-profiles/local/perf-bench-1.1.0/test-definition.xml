@@ -44,6 +44,10 @@
           <Value>syscall basic -l 5000000</Value>
         </Entry>
         <Entry>
+          <Name>Syscall execve</Name>
+          <Value>syscall execve -l 1000</Value>
+        </Entry>
+        <Entry>
           <Name>Syscall Fork</Name>
           <Value>syscall fork -l 5000</Value>
         </Entry>
