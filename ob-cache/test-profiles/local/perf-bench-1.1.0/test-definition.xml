@@ -60,10 +60,6 @@
           <Value>futex hash -r 7 -s</Value>
         </Entry>
         <Entry>
-          <Name>Futex Lock-Pi</Name>
-          <Value>futex lock-pi -r 7 -s</Value>
-        </Entry>
-        <Entry>
           <Name>Epoll Wait</Name>
           <Value>epoll wait -r 7</Value>
         </Entry>
