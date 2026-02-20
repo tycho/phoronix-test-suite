@@ -33,35 +33,35 @@
         </Entry>
         <Entry>
           <Name>Memcpy 1MB</Name>
-          <Value>mem memcpy -l 30000 -s 1MB</Value>
+          <Value>mem memcpy -l 20000 -s 1MB</Value>
         </Entry>
         <Entry>
           <Name>Memset 1MB</Name>
-          <Value>mem memset -l 30000 -s 1MB</Value>
+          <Value>mem memset -l 20000 -s 1MB</Value>
         </Entry>
         <Entry>
           <Name>Syscall Basic</Name>
-          <Value>syscall basic -l 5000000</Value>
+          <Value>syscall basic -l 4000000</Value>
         </Entry>
         <Entry>
           <Name>Syscall execve</Name>
-          <Value>syscall execve -l 1000</Value>
+          <Value>syscall execve -l 3000</Value>
         </Entry>
         <Entry>
           <Name>Syscall Fork</Name>
-          <Value>syscall fork -l 5000</Value>
+          <Value>syscall fork -l 8000</Value>
         </Entry>
         <Entry>
           <Name>Futex Hash</Name>
-          <Value>futex hash -r 3 -s</Value>
+          <Value>futex hash -r 5 -s</Value>
         </Entry>
         <Entry>
           <Name>Futex Lock-Pi</Name>
-          <Value>futex lock-pi -r 3 -s</Value>
+          <Value>futex lock-pi -r 5 -s</Value>
         </Entry>
         <Entry>
           <Name>Epoll Wait</Name>
-          <Value>epoll wait -r 3</Value>
+          <Value>epoll wait -r 5</Value>
         </Entry>
       </Menu>
     </Option>
