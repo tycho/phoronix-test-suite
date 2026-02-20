@@ -14,12 +14,12 @@ if [ $SIZE_BASED_ON_L3 -gt $STREAM_ARRAY_SIZE ]
 then
      STREAM_ARRAY_SIZE=$SIZE_BASED_ON_L3
 fi
-cc stream.c -DSTREAM_ARRAY_SIZE=$STREAM_ARRAY_SIZE -DNTIMES=100 $CFLAGS -fopenmp -o stream-bin
+cc stream.c -DSTREAM_ARRAY_SIZE=$STREAM_ARRAY_SIZE -DNTIMES=20 $CFLAGS -fopenmp -o stream-bin
 CC_EXIT_STATUS=$?
 if [ $CC_EXIT_STATUS -gt 0 ]
 then
     # Retry compiling with -mcmodel=medium set
-    cc stream.c -DSTREAM_ARRAY_SIZE=$STREAM_ARRAY_SIZE -DNTIMES=100 -mcmodel=medium $CFLAGS -fopenmp -o stream-bin
+    cc stream.c -DSTREAM_ARRAY_SIZE=$STREAM_ARRAY_SIZE -DNTIMES=20 -mcmodel=medium $CFLAGS -fopenmp -o stream-bin
     CC_EXIT_STATUS=$?
 fi
 echo $CC_EXIT_STATUS > ~/install-exit-status
