@@ -1,0 +1,1 @@
+{"overview":[],"capabilities":{"shared_libraries":["libdnnl.so.1","libm.so.6","libgomp.so.1","libc.so.6"],"default_instructions":["MMX","AVX","AVX2","FMA"],"max_instructions":["MMX","AVX","AVX2","FMA"],"honors_cflags":"0","scales_cpu_cores":null}}

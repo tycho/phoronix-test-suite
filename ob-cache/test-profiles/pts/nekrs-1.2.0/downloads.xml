@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/Nek5000/nekRS/archive/refs/tags/v26.0.tar.gz</URL>
+      <MD5>9700143631b98a52f9ea3c998362df7b</MD5>
+      <SHA256>af1d93e36dd0c446571ef00680bafa4bd3aabf3d0ac5ac7781f9803f906eab9f</SHA256>
+      <FileName>nekRS-26.0.tar.gz</FileName>
+      <FileSize>65266129</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

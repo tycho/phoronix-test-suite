@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>Throughput: #_RESULT_# requests/s, 4842.16 total tokens/s, 689.76 output tokens/s</OutputTemplate>
+    <ResultScale>requests/s</ResultScale>
+    <ResultProportion>HIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>Throughput: 5.39 requests/s, 4842.16 total tokens/s, #_RESULT_# output tokens/s</OutputTemplate>
+    <ResultScale>tokens/s</ResultScale>
+    <ResultProportion>HIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>Avg latency: #_RESULT_# seconds</OutputTemplate>
+    <ResultScale>Average Latency - Seconds</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>10% percentile latency: #_RESULT_# seconds</OutputTemplate>
+    <ResultScale>10p Latency - Seconds</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>50% percentile latency: #_RESULT_# seconds</OutputTemplate>
+    <ResultScale>50p Latency - Seconds</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>75% percentile latency: #_RESULT_# seconds</OutputTemplate>
+    <ResultScale>75p Latency - Seconds</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>90% percentile latency: #_RESULT_# seconds</OutputTemplate>
+    <ResultScale>90p Latency - Seconds</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>99% percentile latency: #_RESULT_# seconds</OutputTemplate>
+    <ResultScale>99p Latency - Seconds</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+</PhoronixTestSuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/openvinotoolkit/openvino.genai/archive/refs/tags/2025.4.1.0.tar.gz</URL>
+      <MD5>b9f00ac61630be72536cfe04b5872a7e</MD5>
+      <SHA256>c0db44989892dba75ed878a56d814bb68aef758e3e8a2cf27670a95d1b6abb20</SHA256>
+      <FileName>openvino.genai-2025.4.1.0.tar.gz</FileName>
+      <FileSize>1755377</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

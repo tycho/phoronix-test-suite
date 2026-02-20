@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/vllm-project/vllm/releases/download/v0.10.0/vllm-0.10.0.tar.gz</URL>
+      <MD5>27599e8c7e06d4b412f369f524be777as</MD5>
+      <SHA256>a44e9013db26082a82c3931ed8772ac884d6d60566d36ecdb0e8dc01c65b241a</SHA256>
+      <FileName>vllm-0.10.0.tar.gz</FileName>
+      <FileSize>9242603</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

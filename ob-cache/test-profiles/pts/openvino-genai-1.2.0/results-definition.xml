@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>[ INFO ] [Average] P[0] Input token size: 6, 1st token latency: 53.37 ms/token, 2nd token latency: 37.14 ms/token, 2nd tokens throughput: #_RESULT_# tokens/s
+</OutputTemplate>
+    <ResultScale>tokens/s</ResultScale>
+    <ResultProportion>HIB</ResultProportion>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>[ INFO ] [Average] P[0] Input token size: 6, 1st token latency: #_RESULT_# ms/token, 2nd token latency: 37.14 ms/token, 2nd tokens throughput: 26.92 tokens/s
+</OutputTemplate>
+    <ResultScale>ms</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+    <AppendToArgumentsDescription>Time To First Token</AppendToArgumentsDescription>
+    <Importance>Secondary</Importance>
+  </ResultsParser>
+</PhoronixTestSuite>

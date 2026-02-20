@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/raas/mbw/archive/refs/tags/v2.0.tar.gz</URL>
+      <MD5>46ca7401ae650734965e7a25453557d4</MD5>
+      <SHA256>557f670e13ff663086fe239e4184d8ca6154b004bd5fde2b0a748e5aa543c87f</SHA256>
+      <FileName>mbw-2.0.tar.gz</FileName>
+      <FileSize>17166</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

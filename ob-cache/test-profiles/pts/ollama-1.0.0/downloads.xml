@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/ollama/ollama/releases/download/v0.13.5/ollama-linux-amd64.tgz</URL>
+      <MD5>142a06a114078993954c29372e77ce1b</MD5>
+      <SHA256>41fb93ff8be35e4d2d22bafd1c42b487efb15b766076d976766bd1ee4db3f8e2</SHA256>
+      <FileName>ollama-0.13.5-linux-amd64.tgz</FileName>
+      <FileSize>2040202429</FileSize>
+      <ArchitectureSpecific>x86_64</ArchitectureSpecific>
+    </Package>
+    <Package>
+      <URL>https://github.com/ollama/ollama/releases/download/v0.13.5/ollama-linux-arm64.tgz</URL>
+      <MD5>0f687e2f7bca2faf54ccb8a0264a7e87</MD5>
+      <SHA256>35898a3e6e6b3aa373e6ba381336bcfd5305f115a4c45dc8738cf96e25e0a557</SHA256>
+      <FileName>ollama-0.13.5-linux-arm64.tgz</FileName>
+      <FileSize>2136512171</FileSize>
+      <ArchitectureSpecific>aarch64</ArchitectureSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

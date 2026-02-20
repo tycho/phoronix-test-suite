@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/lammps/lammps/archive/refs/tags/stable_22Jul2025_update2.tar.gz</URL>
+      <MD5>5b18e1b14d438dc746998e771953c4d4</MD5>
+      <SHA256>fede484269cdb22f1cb738b4cd118a9bf9cb4bd3c85667f1e6a73a9fa5c2de6b</SHA256>
+      <FileName>lammps-stable_22Jul2025_update2.tar.gz</FileName>
+      <FileSize>152598214</FileSize>
+    </Package>
+    <Package>
+      <URL>http://www.phoronix-test-suite.com/benchmark-files/lammps-hecbiosim-1.tar.gz</URL>
+      <MD5>65c3b50b77688611e92fcff330e27e48</MD5>
+      <SHA256>485e0615a5422f7c0f48860bfc606485348f92fd1ffe4ad05a23d6e8850ad84b</SHA256>
+      <FileName>lammps-hecbiosim-1.tar.gz</FileName>
+      <FileSize>428900129</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

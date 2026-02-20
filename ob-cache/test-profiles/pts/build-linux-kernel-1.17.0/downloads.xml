@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>http://fr2.rpmfind.net/linux/kernel/v6.x/linux-6.15.tar.xz, https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.tar.xz</URL>
+      <MD5>c0f205cc27982a875c519f644a6288c4</MD5>
+      <SHA256>7586962547803be7ecc4056efc927fb25214548722bd28171172f3599abb9764</SHA256>
+      <FileName>linux-6.15.tar.xz</FileName>
+      <FileSize>151168812</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

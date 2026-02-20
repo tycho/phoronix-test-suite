@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>vLLM</Title>
+    <AppVersion>0.10</AppVersion>
+    <Description>vLLM benchmark for AI large language model (LLM) benchmarking. vLLM is a high throughput and efficient inference and serving engine for LLMs. vLLM supports NVIDIA GPUs, AMD GPUs, Intel GPUs, and other hardware.</Description>
+    <ResultScale>token/s</ResultScale>
+    <Proportion>HIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.0</Version>
+    <SupportedPlatforms>Linux</SupportedPlatforms>
+    <SoftwareType>Utility</SoftwareType>
+    <TestType>Graphics</TestType>
+    <License>Free</License>
+    <Status>Verified</Status>
+    <ExternalDependencies>python, build-utilities, cuda</ExternalDependencies>
+    <RequiresInternet>TRUE</RequiresInternet>
+    <EnvironmentSize>36000</EnvironmentSize>
+    <ProjectURL>https://www.vllm.ai/</ProjectURL>
+    <RepositoryURL>https://github.com/vllm-project/vllm</RepositoryURL>
+    <Maintainer>Michael Larabel</Maintainer>
+  </TestProfile>
+  <TestSettings>
+    <Option>
+      <DisplayName>Test</DisplayName>
+      <Identifier>test</Identifier>
+      <ArgumentPrefix> </ArgumentPrefix>
+      <Menu>
+        <Entry>
+          <Name>Hermes-3-Llama-3.2-3B Throughput</Name>
+          <Value>throughput --model NousResearch/Hermes-3-Llama-3.2-3B --dataset-name sonnet --dataset-path ~/vllm-sources/benchmarks/sonnet.txt</Value>
+        </Entry>
+        <Entry>
+          <Name>Hermes-3-Llama-3.2-3B Latency</Name>
+          <Value>latency --model NousResearch/Hermes-3-Llama-3.2-3B</Value>
+        </Entry>
+        <Entry>
+          <Name>Hermes-3-Llama-3.1-8B Throughput</Name>
+          <Value>throughput --model NousResearch/Hermes-3-Llama-3.1-8B --dataset-name sonnet --dataset-path ~/vllm-sources/benchmarks/sonnet.txt</Value>
+        </Entry>
+        <Entry>
+          <Name>Hermes-3-Llama-3.2-38B Latency</Name>
+          <Value>latency --model NousResearch/Hermes-3-Llama-3.1-8B</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen2-VL-7B-Instruct VisionArena Throughput</Name>
+          <Value>throughput --model Qwen/Qwen2-VL-7B-Instruct --backend vllm-chat --dataset-name hf --dataset-path lmarena-ai/VisionArena-Chat --num-prompts 1000 --hf-split train</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen2-VL-7B-Instruct Latency</Name>
+          <Value>latency --model Qwen/Qwen2-VL-7B-Instruct</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8 Latency</Name>
+          <Value>latency --model Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen2-VL-7B-Instruct LLaVA-OneVision-Data Throughput</Name>
+          <Value>throughput --model Qwen/Qwen2-VL-7B-Instruct --backend vllm-chat --dataset-name hf --dataset-path lmms-lab/LLaVA-OneVision-Data --hf-split train --hf-subset "chart2text(cauldron)" --num-prompts 50</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen/QwQ-32B AI-MO Throughput</Name>
+          <Value>throughput --model Qwen/QwQ-32B --backend vllm --dataset-name hf --dataset-path AI-MO/aimo-validation-aime  --hf-split train --num-prompts 10</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen/QwQ-32B Latency</Name>
+          <Value>latency --model Qwen/QwQ-32B</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen/Qwen2.5-72B-Instruct</Name>
+          <Value>latency --model Qwen/QwQ-32B</Value>
+        </Entry>
+        <Entry>
+          <Name>Qwen/QwQ-32B Throughput</Name>
+          <Value>throughput --model Qwen/QwQ-32B --dataset-name sonnet --dataset-path ~/vllm-sources/benchmarks/sonnet.txt</Value>
+        </Entry>
+        <Entry>
+          <Name>deepseek-moe-16b-chat LLaVA-OneVision-Data Throughput</Name>
+          <Value>throughput --model deepseek-ai/deepseek-moe-16b-chat --trust-remote-code --backend vllm-chat --dataset-name hf --dataset-path lmms-lab/LLaVA-OneVision-Data --hf-split train --hf-subset "chart2text(cauldron)"</Value>
+        </Entry>
+        <Entry>
+          <Name>deepseek-moe-16b-chat Latency</Name>
+          <Value>latency --model deepseek-ai/deepseek-moe-16b-chat --trust-remote-code</Value>
+        </Entry>
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>

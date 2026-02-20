@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>benchmark/tpch/parquet/write_lineitem_parquet_memory_limited.benchmark	3	#_RESULT_#</OutputTemplate>
+    <LineHint>.</LineHint>
+    <MultiMatch>GEOMETRIC_MEAN</MultiMatch>
+  </ResultsParser>
+</PhoronixTestSuite>

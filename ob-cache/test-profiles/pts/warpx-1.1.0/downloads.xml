@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/BLAST-WarpX/warpx/archive/refs/tags/26.01.tar.gz</URL>
+      <MD5>d5e8dd149c92c4a2834daf42decdde0c</MD5>
+      <SHA256>c3b34a93e350e068c07e3107784885562cfa5c93ce3fd65fed002e5a6353d63d</SHA256>
+      <FileName>warpx-26.01.tar.gz</FileName>
+      <FileSize>6162230</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

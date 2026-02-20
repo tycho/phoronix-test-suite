@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>eval rate:            #_RESULT_# tokens/s</OutputTemplate>
+    <MultiMatch>HARMONIC_MEAN</MultiMatch>
+  </ResultsParser>
+</PhoronixTestSuite>

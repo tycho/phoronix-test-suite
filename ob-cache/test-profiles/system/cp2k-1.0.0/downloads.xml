@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/cp2k/cp2k/releases/download/v2026.1/cp2k-2026.1.tar.bz2</URL>
+      <MD5>16037743bd765cf367c822ac6c285936</MD5>
+      <SHA256>4364c74bcffaa474bc234e11686b09550e4d06932acf2147a341e4f7679dd88e</SHA256>
+      <FileName>cp2k-2026.1.tar.bz2</FileName>
+      <FileSize>74627312</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

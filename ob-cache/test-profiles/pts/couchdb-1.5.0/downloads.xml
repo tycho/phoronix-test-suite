@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://archive.apache.org/dist/couchdb/source/3.5.1/apache-couchdb-3.5.1.tar.gz</URL>
+      <MD5>56ac34478dd7fc781b52551659bf22f0</MD5>
+      <SHA256>c22cf31d6d91a3f5aa04f0cad493babdc723213494cb5e6170a507d359c50136</SHA256>
+      <FileName>apache-couchdb-3.5.1.tar.gz</FileName>
+      <FileSize>25006439</FileSize>
+    </Package>
+    <Package>
+      <URL>http://www.phoronix-test-suite.com/benchmark-files/apache-couchdb-benchbulk-1.tar.xz</URL>
+      <MD5>192b63227d48c76b10f7ba7eb024e8c1</MD5>
+      <SHA256>a9bb7d67dd668cd7cb336f59a5079e239fe028bc23ae270047e69b0f345d004a</SHA256>
+      <FileName>apache-couchdb-benchbulk-1.tar.xz</FileName>
+      <FileSize>1172</FileSize>
+    </Package>
+    <Package>
+      <URL>https://github.com/erlang/otp/releases/download/OTP-27.1/otp_src_27.1.tar.gz</URL>
+      <MD5>9b37aee68b48bbdebff85a9a5d442c7c</MD5>
+      <SHA256>5e65d421c6afcac05c6ef38ee49d6f87e74227f282a639d32e890f6b6c456ec0</SHA256>
+      <FileName>otp_src_27.1.tar.gz</FileName>
+      <FileSize>101286512</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/RenderKit/oidn/releases/download/v2.4.0/oidn-2.4.0.x86_64.linux.tar.gz</URL>
+      <MD5>365ac94e62a86a3a44fdf183d070db2a</MD5>
+      <SHA256>9ec7a60688de12c41f8437b42e0c29508bc13b03733af536f48e473d1a9fa677</SHA256>
+      <FileName>oidn-2.4.0.x86_64.linux.tar.gz</FileName>
+      <FileSize>65265639</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>https://github.com/RenderKit/oidn/releases/download/v2.4.0/oidn-2.4.0.x64.windows.zip</URL>
+      <MD5>cf7f3518ff6b6187df5f4ccca3639800</MD5>
+      <SHA256>066da12b9ddb3c1b3ef1523d81486b6708b65ae5490d2795b124139b9f329832</SHA256>
+      <FileName>oidn-2.4.0.x64.windows.zip</FileName>
+      <FileSize>56810671</FileSize>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>https://github.com/RenderKit/oidn/releases/download/v2.4.0/oidn-2.4.0.arm64.macos.tar.gz</URL>
+      <MD5>d2ed06f1c9c96649f2a3b99ae52a7d4a</MD5>
+      <SHA256>8f12fe00d17d9f4f5e8f776cf3dc0ffda7faee56c197d08ea5d27ccdbecc710a</SHA256>
+      <FileName>oidn-2.4.0.arm64.macos.tar.gz</FileName>
+      <FileSize>51341559</FileSize>
+      <PlatformSpecific>MacOSX</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

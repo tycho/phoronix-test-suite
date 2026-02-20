@@ -1,0 +1,21 @@
+#!/bin/sh
+tar -xf nekRS-26.0.tar.gz
+cd nekRS-26.0/
+rm -rf ~/.local/nekrs
+echo "\n" | ./build.sh
+sed -i '1s/^/#include <cstdint>\n/' 3rd_party/adios/thirdparty/yaml-cpp/yaml-cpp/src/emitterutils.cpp
+cmake --build ./build --target install -j $NUM_CPU_CORES
+echo $? > ~/install-exit-status
+MASKED_COMPILER_DIR=`dirname \`which g++\``/
+sed -i "s,$MASKED_COMPILER_DIR, ,g" $HOME/.local/nekrs/nekrs.conf
+cd ~
+cat>nekrs<<EOT
+#!/bin/sh
+export NEKRS_HOME=\$HOME/.local/nekrs
+export PATH=\$NEKRS_HOME/bin:\$PATH
+cd ~/.local/nekrs/examples/\$1
+mpirun --allow-run-as-root -np \$NUM_CPU_PHYSICAL_CORES nekrs --setup \$2 > \$LOG_FILE 2>&1
+echo \$? > ~/test-exit-status
+EOT
+chmod +x nekrs
+

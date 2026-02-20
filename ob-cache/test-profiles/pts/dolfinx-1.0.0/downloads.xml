@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/FEniCS/dolfinx/archive/refs/tags/v0.10.0.post5.tar.gz</URL>
+      <MD5>9afafd03bece812916bed3a16163d0d3</MD5>
+      <SHA256>0bd9a20de0ffcd968d7a07a3a39501dd7b75bf9b33703f24469ad6b935c0f38f</SHA256>
+      <FileName>dolfinx-0.10.0.post5.tar.gz</FileName>
+      <FileSize>874625</FileSize>
+    </Package>
+    <Package>
+      <URL>https://github.com/FEniCS/performance-test/archive/1331728e17b5585976121be5676af18255e38a7e.zip</URL>
+      <MD5>de45bad6a238db36efb1636315410688</MD5>
+      <SHA256>a4226ee3eadc55d57b6d0fb85c69c51307ad8febca2965fea96aaf8a4552f44d</SHA256>
+      <FileName>performance-test-1331728e17b5585976121be5676af18255e38a7e.zip</FileName>
+      <FileSize>32977</FileSize>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
