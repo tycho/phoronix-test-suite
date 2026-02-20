@@ -43,11 +43,6 @@
           <Value>0 1</Value>
           <Message></Message>
         </Entry>
-        <Entry>
-          <Name>CPU+GPU</Name>
-          <Value>1 1</Value>
-          <Message></Message>
-        </Entry>
       </Menu>
     </Option>
   </TestSettings>
