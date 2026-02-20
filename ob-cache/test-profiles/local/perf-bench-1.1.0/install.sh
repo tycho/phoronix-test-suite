@@ -1,5 +1,5 @@
 #!/bin/sh
-KVER=6.9
+KVER=6.18.12
 tar -xf linux-${KVER}.tar.xz
 pushd "linux-${KVER}/tools/perf"
 NO_LIBTRACEEVENT=1 make -j $NUM_CPU_CORES

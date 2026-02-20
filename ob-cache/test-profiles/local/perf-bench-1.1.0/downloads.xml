@@ -3,11 +3,11 @@
 <PhoronixTestSuite>
   <Downloads>
     <Package>
-      <URL>https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz</URL>
-      <MD5>b9828ed78dae306e3d90643cd5cdb8f1</MD5>
-      <SHA256>24fa01fb989c7a3e28453f117799168713766e119c5381dac30115f18f268149</SHA256>
-      <FileName>linux-6.9.tar.xz</FileName>
-      <FileSize>144034416</FileSize>
+      <URL>https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.12.tar.xz</URL>
+      <MD5>8db16527e713d7a5b55b45954ff30772</MD5>
+      <SHA256>e003294ad4c2c2ac5bb77fbb8259511134f51d987b3212516832dc4b0c83f1ea</SHA256>
+      <FileName>linux-6.18.12.tar.xz</FileName>
+      <FileSize>154327488</FileSize>
     </Package>
   </Downloads>
 </PhoronixTestSuite>

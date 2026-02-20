@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <TestInformation>
     <Title>perf-bench</Title>
-    <AppVersion>6.9</AppVersion>
+    <AppVersion>6.18.12</AppVersion>
     <Description>This test profile is used for running Linux perf-bench, the benchmark support within the Linux kernel's perf tool.</Description>
     <ResultScale>ops/sec</ResultScale>
     <Proportion>HIB</Proportion>
