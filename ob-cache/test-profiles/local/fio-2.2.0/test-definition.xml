@@ -51,14 +51,6 @@
       <Identifier>engine</Identifier>
       <Menu>
         <Entry>
-          <Name>IO_uring</Name>
-          <Value>io_uring</Value>
-        </Entry>
-        <Entry>
-          <Name>POSIX AIO</Name>
-          <Value>posixaio</Value>
-        </Entry>
-        <Entry>
           <Name>Sync</Name>
           <Value>sync</Value>
         </Entry>
@@ -66,20 +58,12 @@
           <Name>Linux AIO</Name>
           <Value>libaio</Value>
         </Entry>
-        <Entry>
-          <Name>Windows AIO</Name>
-          <Value>windowsaio</Value>
-        </Entry>
       </Menu>
     </Option>
     <Option>
       <DisplayName>Direct</DisplayName>
       <Identifier>direct</Identifier>
       <Menu>
-        <Entry>
-          <Name>No</Name>
-          <Value>0</Value>
-        </Entry>
         <Entry>
           <Name>Yes</Name>
           <Value>1</Value>
@@ -95,64 +79,24 @@
           <Value>4k</Value>
         </Entry>
         <Entry>
-          <Name>8KB</Name>
-          <Value>8k</Value>
-        </Entry>
-        <Entry>
-          <Name>16KB</Name>
-          <Value>16k</Value>
-        </Entry>
-        <Entry>
-          <Name>32KB</Name>
-          <Value>32k</Value>
-        </Entry>
-        <Entry>
-          <Name>64KB</Name>
-          <Value>64k</Value>
-        </Entry>
-        <Entry>
           <Name>128KB</Name>
           <Value>128k</Value>
-        </Entry>
-        <Entry>
-          <Name>256KB</Name>
-          <Value>256k</Value>
-        </Entry>
-        <Entry>
-          <Name>512KB</Name>
-          <Value>512k</Value>
-        </Entry>
-        <Entry>
-          <Name>1MB</Name>
-          <Value>1m</Value>
-        </Entry>
-        <Entry>
-          <Name>2MB</Name>
-          <Value>2m</Value>
-        </Entry>
-        <Entry>
-          <Name>4MB</Name>
-          <Value>4m</Value>
-        </Entry>
-        <Entry>
-          <Name>8MB</Name>
-          <Value>8m</Value>
         </Entry>
       </Menu>
     </Option>
     <Option>
-      <DisplayName>Job Count</DisplayName>
-      <Identifier>cpu-threads</Identifier>
+      <DisplayName>Queue Depth</DisplayName>
+      <Identifier>queue-depth</Identifier>
       <Menu>
         <Entry>
           <Name>1</Name>
           <Value>1</Value>
         </Entry>
+        <Entry>
+          <Name>32</Name>
+          <Value>32</Value>
+        </Entry>
       </Menu>
-    </Option>
-    <Option>
-      <DisplayName>Disk Target</DisplayName>
-      <Identifier>auto-disk-mount-points</Identifier>
     </Option>
   </TestSettings>
 </PhoronixTestSuite>

@@ -10,52 +10,63 @@ else
 fi
 echo $? > ~/install-exit-status
 cd ~
-echo "#!/bin/sh
+
+cat > fio-run <<"EOF"
+#!/bin/sh
 cd fio-fio-3.40
-if [ \"X\$7\" = \"X\" ]
-then
-	DIRECTORY_TO_TEST=\"fiofile\"
-else
-	DIRECTORY_TO_TEST=\"\$7/fiofile\"
+
+FIO_RW=$1
+FIO_IO_ENGINE=$2
+FIO_DIRECT=$3
+FIO_BS=$4
+FIO_QDEPTH=$5
+FIO_NUM_JOBS=1
+
+if [ "${FIO_IO_ENGINE}" = "sync" ]; then
+	FIO_NUM_JOBS=${FIO_QDEPTH}
+	FIO_QDEPTH=1
 fi
-if [ \"X\$6\" = \"X\" ]
-then
-	NUM_JOBS=1
-else
-	NUM_JOBS=\"\$6\"
-fi
-if [ \"\$2\" = \"io_uring\" ]
-then
-	FORCE_ASYNC=\"force_async=4\"
-else
-	FORCE_ASYNC=\"\"
-fi
-echo \"[global]
-rw=\$1
-ioengine=\$2
-iodepth=64
-size=1g
-direct=\$3
-startdelay=20
-\$FORCE_ASYNC
-ramp_time=5
-runtime=60
+
+DIRECTORY_TO_TEST="fiofile"
+
+cat > test.fio <<-FIO_EOF
+[global]
+# Timing configuration
+clocksource=clock_gettime
+startdelay=1
+ramp_time=1
+runtime=5
 group_reporting=1
-numjobs=\$NUM_JOBS
-time_based\" > test.fio
-if [ \"\${OPERATING_SYSTEM}\" != \"freebsd\" ]
-then
-	echo \"disk_util=0\" >> test.fio
-fi
-echo \"clat_percentiles=0
+time_based
+
+# I/O configuration
+rw=${FIO_RW}
+ioengine=${FIO_IO_ENGINE}
+iodepth=${FIO_QDEPTH}
+numjobs=${FIO_NUM_JOBS}
+size=1g
+direct=${FIO_DIRECT}
+filename=${DIRECTORY_TO_TEST}
+
+# Increase numeric precision of IOPS or BW
+significant_figures=10
+
+# Disable latency measurement
+lat_percentiles=0
+clat_percentiles=0
+slat_percentiles=0
 disable_lat=1
 disable_clat=1
 disable_slat=1
-filename=\$DIRECTORY_TO_TEST
+
 [test]
 name=test
-bs=\$4
-stonewall\" >> test.fio
-./fio test.fio 2>&1 > \$LOG_FILE
-echo \$? > ~/test-exit-status" > fio-run
+bs=${FIO_BS}
+stonewall
+FIO_EOF
+
+./fio test.fio 2>&1 > "${LOG_FILE}"
+echo $? > ~/test-exit-status
+EOF
+
 chmod +x fio-run
