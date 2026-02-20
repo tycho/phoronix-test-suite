@@ -1454,7 +1454,7 @@ class pts_client
 
 				foreach(pts_results::saved_test_results() as $result)
 				{
-					if(soundex($result) == $arg_soundex || (isset($passed_arg[3]) && strpos($identifier, $arg_save_identifier_like) !== false))
+					if(soundex($result) == $arg_soundex || (isset($passed_arg[3]) && !empty($identifier) && strpos($identifier, $arg_save_identifier_like) !== false))
 					{
 						pts_arrays::unique_push($similar_tests, array($result, ' [Test Result]'));
 					}
