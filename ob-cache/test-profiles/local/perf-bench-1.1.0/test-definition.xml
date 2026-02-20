@@ -29,7 +29,7 @@
       <Menu>
         <Entry>
           <Name>Sched Pipe</Name>
-          <Value>sched pipe -l 2000000</Value>
+          <Value>sched pipe -l 200000</Value>
         </Entry>
         <Entry>
           <Name>Memcpy 1MB</Name>
