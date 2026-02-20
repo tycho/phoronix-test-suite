@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://github.com/axboe/fio/archive/refs/tags/fio-3.40.tar.gz</URL>
+      <MD5>f67d71428f9f68ddc1e804b03ebe1614</MD5>
+      <SHA256>9fc81e3a490a53fe821d76dd759d64f229d0ac6b4d2c711837bcad158242e3b2</SHA256>
+      <FileName>fio-fio-3.40.tar.gz</FileName>
+      <FileSize>7745816</FileSize>
+      <PlatformSpecific>Linux, BSD, Solaris, MacOSX</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
