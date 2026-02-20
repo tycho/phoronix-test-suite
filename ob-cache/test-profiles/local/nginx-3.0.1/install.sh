@@ -23,7 +23,24 @@ make -j $NUM_CPU_CORES
 echo $? > ~/install-exit-status
 cd ~
 mv -f http-test-files/* nginx_/html/
-echo "#!/bin/sh
-./wrk-4.2.0/wrk -t \$NUM_CPU_CORES \$@ > \$LOG_FILE 2>&1
-echo \$? > ~/test-exit-status" > nginx
+cat >nginx <<"EOF"
+#!/bin/sh
+
+connections="$1"
+threads=$((connections / 4))
+
+if [ "$threads" -lt 1 ]; then
+    threads=1
+elif [ "$threads" -gt "$NUM_CPU_CORES" ]; then
+    threads="$NUM_CPU_CORES"
+fi
+
+# Enforce invariant: threads <= connections
+if [ "$threads" -gt "$connections" ]; then
+    threads="$connections"
+fi
+
+./wrk-4.2.0/wrk -d 90s -t $threads -c $connections $2 > $LOG_FILE 2>&1
+echo $? > ~/test-exit-status
+EOF
 chmod +x nginx

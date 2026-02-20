@@ -24,13 +24,11 @@
   </TestProfile>
   <TestSettings>
     <Default>
-      <Arguments>-d 90s </Arguments>
       <PostArguments> https://127.0.0.1:8089/test.html</PostArguments>
     </Default>
     <Option>
       <DisplayName>Connections</DisplayName>
       <Identifier>concurrent</Identifier>
-      <ArgumentPrefix>-c </ArgumentPrefix>
       <Menu>
         <Entry>
           <Name>1</Name>
