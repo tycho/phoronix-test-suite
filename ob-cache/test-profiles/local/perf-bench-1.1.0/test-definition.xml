@@ -29,31 +29,31 @@
       <Menu>
         <Entry>
           <Name>Sched Pipe</Name>
-          <Value>sched pipe -l 5000000</Value>
+          <Value>sched pipe -l 2000000</Value>
         </Entry>
         <Entry>
           <Name>Memcpy 1MB</Name>
-          <Value>mem memcpy -l 100000 -s 1MB</Value>
+          <Value>mem memcpy -l 30000 -s 1MB</Value>
         </Entry>
         <Entry>
           <Name>Memset 1MB</Name>
-          <Value>mem memset -l 100000 -s 1MB</Value>
+          <Value>mem memset -l 30000 -s 1MB</Value>
         </Entry>
         <Entry>
           <Name>Syscall Basic</Name>
-          <Value>syscall basic -l 100000000</Value>
+          <Value>syscall basic -l 5000000</Value>
         </Entry>
         <Entry>
           <Name>Futex Hash</Name>
-          <Value>futex hash -r 30 -s</Value>
+          <Value>futex hash -r 3 -s</Value>
         </Entry>
         <Entry>
           <Name>Futex Lock-Pi</Name>
-          <Value>futex lock-pi -r 30 -s</Value>
+          <Value>futex lock-pi -r 3 -s</Value>
         </Entry>
         <Entry>
           <Name>Epoll Wait</Name>
-          <Value>epoll wait -r 30</Value>
+          <Value>epoll wait -r 3</Value>
         </Entry>
       </Menu>
     </Option>
