@@ -44,6 +44,10 @@
           <Value>syscall basic -l 5000000</Value>
         </Entry>
         <Entry>
+          <Name>Syscall Fork</Name>
+          <Value>syscall fork -l 5000</Value>
+        </Entry>
+        <Entry>
           <Name>Futex Hash</Name>
           <Value>futex hash -r 3 -s</Value>
         </Entry>
