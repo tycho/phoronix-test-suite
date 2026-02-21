@@ -121,6 +121,13 @@ class pts_env
 			'value_type' => 'positive_integer',
 			'advertise_in_phoromatic' => true,
 			),
+		'FORCE_MAX_TIMES_TO_RUN' => array(
+			'description' => 'Absolute maximum number of times to run when using a dynamic run count',
+			'default' => 0,
+			'usage' => array('benchmark'),
+			'value_type' => 'positive_integer',
+			'advertise_in_phoromatic' => true,
+			),
 		'FORCE_MIN_TIMES_TO_RUN_CUTOFF' => array(
 			'description' => 'Used in conjunction with the FORCE_MIN_TIMES_TO_RUN, the FORCE_MIN_TIMES_TO_RUN_CUTOFF can be used for specifyingg the amount of time (in minutes) before foregoing additional runs. This allows cutting off the testing early if this time threshold has been reached.',
 			'default' => '',
@@ -130,6 +137,12 @@ class pts_env
 		'FORCE_ABSOLUTE_MIN_TIMES_TO_RUN' => array(
 			'description' => 'This option is similar to FORCE_MIN_TIMES_TO_RUN but is *absolute* in ensuring each test will run at least that number of times and not subject to change of any timed cut-offs or other factors.',
 			'default' => '',
+			'usage' => array('benchmark'),
+			'value_type' => 'positive_integer',
+			),
+		'FORCE_ABSOLUTE_MAX_TIMES_TO_RUN' => array(
+			'description' => 'This option is similar to FORCE_MAX_TIMES_TO_RUN but is *absolute* in ensuring each test will run at most that number of times and not subject to change of any timed cut-offs or other factors.',
+			'default' => 0,
 			'usage' => array('benchmark'),
 			'value_type' => 'positive_integer',
 			),

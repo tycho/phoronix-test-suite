@@ -188,12 +188,30 @@ class pts_test_run_manager
 				$maximum_times_to_run = $scheduled_times_to_run * 2;
 			}
 
+			if (($env_max_total_runs = pts_env::read('FORCE_MAX_TIMES_TO_RUN')) > 0)
+			{
+				// Clamp maximum times to run based on environment variable, if
+				// present
+				$maximum_times_to_run = min($maximum_times_to_run, $env_max_total_runs);
+			}
+
+
+			$abs_maximum_times_to_run = $maximum_times_to_run + $scheduled_times_to_run;
+
+			if (($env_absolute_max_total_runs = pts_env::read('FORCE_ABSOLUTE_MAX_TIMES_TO_RUN')) > 0)
+			{
+				// Clamp maximum times to run based on environment variable, if
+				// present
+				$maximum_times_to_run = min($maximum_times_to_run, $env_absolute_max_total_runs);
+				$abs_maximum_times_to_run = min($abs_maximum_times_to_run, $env_absolute_max_total_runs);
+			}
+
 			// If we haven't reached scheduled times to run x 2, increase count straight away
 			if($times_already_ran < $maximum_times_to_run)
 			{
 				return true;
 			}
-			else if($times_already_ran < ($maximum_times_to_run + $scheduled_times_to_run))
+			else if($times_already_ran < $abs_maximum_times_to_run)
 			{
 				// More aggressive determination whether to still keep increasing the run count beyond the expected maximum...
 				$first_and_last_diff_in_deviation = abs(pts_arrays::first_element($run_std_devs) - pts_arrays::last_element($run_std_devs));
