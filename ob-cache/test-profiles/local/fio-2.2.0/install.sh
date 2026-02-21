@@ -18,9 +18,18 @@ cd fio-fio-3.40
 FIO_RW=$1
 FIO_IO_ENGINE=$2
 FIO_DIRECT=$3
-FIO_BS=$4
-FIO_QDEPTH=$5
+FIO_QDEPTH=$4
 FIO_NUM_JOBS=1
+
+# 128k sequential, 4k random
+case $FIO_RW in
+rand*)
+	FIO_BS=4k
+	;;
+*)
+	FIO_BS=128k
+	;;
+esac
 
 if [ "${FIO_IO_ENGINE}" = "sync" ]; then
 	FIO_NUM_JOBS=${FIO_QDEPTH}

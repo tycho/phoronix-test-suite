@@ -29,19 +29,19 @@
       <Identifier>type</Identifier>
       <Menu>
         <Entry>
-          <Name>Random Read</Name>
+          <Name>Random Read (4k)</Name>
           <Value>randread</Value>
         </Entry>
         <Entry>
-          <Name>Random Write</Name>
+          <Name>Random Write (4k)</Name>
           <Value>randwrite</Value>
         </Entry>
         <Entry>
-          <Name>Sequential Read</Name>
+          <Name>Sequential Read (128k)</Name>
           <Value>read</Value>
         </Entry>
         <Entry>
-          <Name>Sequential Write</Name>
+          <Name>Sequential Write (128k)</Name>
           <Value>write</Value>
         </Entry>
       </Menu>
@@ -67,20 +67,6 @@
         <Entry>
           <Name>Yes</Name>
           <Value>1</Value>
-        </Entry>
-      </Menu>
-    </Option>
-    <Option>
-      <DisplayName>Block Size</DisplayName>
-      <Identifier>size</Identifier>
-      <Menu>
-        <Entry>
-          <Name>4KB</Name>
-          <Value>4k</Value>
-        </Entry>
-        <Entry>
-          <Name>128KB</Name>
-          <Value>128k</Value>
         </Entry>
       </Menu>
     </Option>
