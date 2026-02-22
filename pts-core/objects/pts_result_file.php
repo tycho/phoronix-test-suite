@@ -20,6 +20,17 @@
 	along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
+function uuid_v4(): string {
+    $data = random_bytes(16);
+
+    // Set version to 0100
+    $data[6] = chr((ord($data[6]) & 0x0f) | 0x40);
+    // Set variant to 10xxxxxx
+    $data[8] = chr((ord($data[8]) & 0x3f) | 0x80);
+
+    return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
+}
+
 class pts_result_file
 {
 	protected $save_identifier = null;
@@ -32,6 +43,7 @@ class pts_result_file
 	private $notes = null;
 	private $internal_tags = null;
 	private $reference_id = null;
+	private $unique_id = null;
 	private $preset_environment_variables = null;
 	public $systems = null;
 	private $is_tracker = -1;
@@ -44,6 +56,7 @@ class pts_result_file
 		$this->systems = array();
 		$this->result_objects = array();
 		$this->ro_relation_map = array();
+		$this->unique_id = uuid_v4();
 
 		if($result_file == null)
 		{
@@ -68,6 +81,7 @@ class pts_result_file
 			$this->notes = self::clean_input($xml->Generated->Notes);
 			$this->internal_tags = self::clean_input($xml->Generated->InternalTags);
 			$this->reference_id = self::clean_input($xml->Generated->ReferenceID);
+			$this->unique_id = self::clean_input($xml->Generated->UniqueID);
 			$this->preset_environment_variables = self::clean_input($xml->Generated->PreSetEnvironmentVariables);
 			$this->last_modified = self::clean_input($xml->Generated->LastModified);
 		}
@@ -439,6 +453,17 @@ class pts_result_file
 	public function get_internal_tags()
 	{
 		return $this->internal_tags;
+	}
+	public function set_unique_id($new_unique_id)
+	{
+		if($new_unique_id != null)
+		{
+			$this->unique_id = $new_unique_id;
+		}
+	}
+	public function get_unique_id()
+	{
+		return $this->unique_id;
 	}
 	public function set_reference_id($new_reference_id)
 	{
@@ -944,6 +969,7 @@ class pts_result_file
 		$xml_writer->addXmlNodeWNE('PhoronixTestSuite/Generated/Notes', $this->get_notes());
 		$xml_writer->addXmlNodeWNE('PhoronixTestSuite/Generated/InternalTags', $this->get_internal_tags());
 		$xml_writer->addXmlNodeWNE('PhoronixTestSuite/Generated/ReferenceID', $this->get_reference_id());
+		$xml_writer->addXmlNodeWNE('PhoronixTestSuite/Generated/UniqueID', $this->get_unique_id());
 		$xml_writer->addXmlNodeWNE('PhoronixTestSuite/Generated/PreSetEnvironmentVariables', $this->get_preset_environment_variables());
 
 		// Write the system hardware/software information
