@@ -20,6 +20,7 @@
 			<xs:element name="Description" type="DescriptionString" />
 			<xs:element name="Notes" type="xs:string" minOccurs="0" maxOccurs="1" />
 			<xs:element name="InternalTags" type="xs:string" minOccurs="0" maxOccurs="1" />
+			<xs:element name="UniqueID" type="xs:string" minOccurs="0" maxOccurs="1" />
 			<xs:element name="ReferenceID" type="xs:string" minOccurs="0" maxOccurs="1" />
 			<xs:element name="PreSetEnvironmentVariables" type="xs:string" minOccurs="0" maxOccurs="1" />
 		</xs:sequence>
