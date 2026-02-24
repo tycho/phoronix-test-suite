@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.5-->
+<PhoronixTestSuite>
+  <ResultsParser>
+    <OutputTemplate>fp32-scalar  = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp32-scalar</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp32-scalar</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp32-vec4    = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp32-vec4</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp32-vec4</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp16-scalar  = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp16-scalar</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp16-scalar</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp16-vec4    = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp16-vec4</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp16-vec4</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp16-matrix    = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp16-matrix</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp16-matrix</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp64-scalar  = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp64-scalar</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp64-scalar</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp64-vec4    = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp64-vec4</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp64-vec4</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>int32-scalar  = #_RESULT_# GIOPS</OutputTemplate>
+    <LineHint>int32-scalar</LineHint>
+    <ResultScale>GIOPS</ResultScale>
+    <ArgumentsDescription>int32-scalar</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>int32-vec4  = #_RESULT_# GIOPS</OutputTemplate>
+    <LineHint>int32-vec4</LineHint>
+    <ResultScale>GIOPS</ResultScale>
+    <ArgumentsDescription>int32-vec4</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>int16-scalar  = #_RESULT_# GIOPS</OutputTemplate>
+    <LineHint>int16-scalar</LineHint>
+    <ResultScale>GIOPS</ResultScale>
+    <ArgumentsDescription>int16-scalar</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>int16-vec4  = #_RESULT_# GIOPS</OutputTemplate>
+    <LineHint>int16-vec4</LineHint>
+    <ResultScale>GIOPS</ResultScale>
+    <ArgumentsDescription>int16-vec4</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>int8-dotprod  = #_RESULT_# GIOPS</OutputTemplate>
+    <LineHint>int8-dotprod</LineHint>
+    <ResultScale>GIOPS</ResultScale>
+    <ArgumentsDescription>int8-dotprod</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>int8-matrix  = #_RESULT_# GIOPS</OutputTemplate>
+    <LineHint>int8-matrix</LineHint>
+    <ResultScale>GIOPS</ResultScale>
+    <ArgumentsDescription>int8-matrix</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>bf16-dotprod  = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>bf16-dotprod</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>bf16-dotprod</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>bf16-matrix  = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>bf16-matrix</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>bf16-matrix</ArgumentsDescription>
+  </ResultsParser>
+</PhoronixTestSuite>
