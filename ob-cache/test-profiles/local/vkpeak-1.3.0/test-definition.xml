@@ -3,7 +3,7 @@
 <PhoronixTestSuite>
   <TestInformation>
     <Title>vkpeak</Title>
-    <AppVersion>20250531</AppVersion>
+    <AppVersion>20260112</AppVersion>
     <Description>Vkpeak is a Vulkan compute benchmark inspired by OpenCL's clpeak. Vkpeak provides Vulkan compute performance measurements for FP16 / FP32 / FP64 / INT8 / BF16 / INT16 / INT32 scalar and vec4 performance.</Description>
     <ResultScale>GFLOPS</ResultScale>
     <Proportion>HIB</Proportion>

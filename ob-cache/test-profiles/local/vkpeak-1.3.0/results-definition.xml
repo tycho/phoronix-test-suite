@@ -91,4 +91,40 @@
     <ResultScale>GFLOPS</ResultScale>
     <ArgumentsDescription>bf16-matrix</ArgumentsDescription>
   </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>fp8-matrix   = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>fp8-matrix</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>fp8-matrix</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>bf8-matrix   = #_RESULT_# GFLOPS</OutputTemplate>
+    <LineHint>bf8-matrix</LineHint>
+    <ResultScale>GFLOPS</ResultScale>
+    <ArgumentsDescription>bf8-matrix</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>copy-h2h     = #_RESULT_# GBPS</OutputTemplate>
+    <LineHint>copy-h2h</LineHint>
+    <ResultScale>GB/s</ResultScale>
+    <ArgumentsDescription>copy-h2h</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>copy-h2d     = #_RESULT_# GBPS</OutputTemplate>
+    <LineHint>copy-h2d</LineHint>
+    <ResultScale>GB/s</ResultScale>
+    <ArgumentsDescription>copy-h2d</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>copy-d2h     = #_RESULT_# GBPS</OutputTemplate>
+    <LineHint>copy-d2h</LineHint>
+    <ResultScale>GB/s</ResultScale>
+    <ArgumentsDescription>copy-d2h</ArgumentsDescription>
+  </ResultsParser>
+  <ResultsParser>
+    <OutputTemplate>copy-d2d     = #_RESULT_# GBPS</OutputTemplate>
+    <LineHint>copy-d2d</LineHint>
+    <ResultScale>GB/s</ResultScale>
+    <ArgumentsDescription>copy-d2d</ArgumentsDescription>
+  </ResultsParser>
 </PhoronixTestSuite>
