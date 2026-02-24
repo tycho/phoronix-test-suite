@@ -1,8 +1,9 @@
 #!/bin/sh
-unzip -o vkpeak-20250531-ubuntu.zip
+VERSION=20260112
+unzip -o vkpeak-${VERSION}-linux.zip
 cat>vkpeak<<EOT
 #!/bin/sh
-cd vkpeak-20250531-ubuntu
+cd vkpeak-${VERSION}-linux
 ./vkpeak 0 > \$LOG_FILE 2>&1
 echo \$? > ~/test-exit-status
 EOT
