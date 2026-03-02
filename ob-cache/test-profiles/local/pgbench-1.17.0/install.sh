@@ -78,14 +78,16 @@ fi
 cd ~
 rm -rf postgresql-${version}/
 rm -rf pg_/doc/
-# initialize database with encoding and locale
-$HOME/pg_/bin/initdb -D $HOME/pg_/data/db --encoding=SQL_ASCII --locale=C
 cat > pgbench <<"EOF"
 #!/bin/sh
 PGDATA=$HOME/pg_/data/db/
 PGPORT=7777
 export PGDATA
 export PGPORT
+
+rm -rf "$PGDATA"
+pg_/bin/initdb -D "$PGDATA" --encoding=SQL_ASCII --locale=C
+
 # start server
 # Since postgresql-18 does have very limited NUMA support and server uses 8 threads only in this run
 # There is no sense to run the SQL server on several NUMA nodes 
@@ -102,16 +104,14 @@ then
 	echo "Buffer size is ${SHARED_BUFFER_SIZE}MB" > $LOG_FILE
 	echo "WAL Checkpoint buffer size is ${WAL_BUFFER_SIZE}MB" >> $LOG_FILE
 	# echo Starting SQL server on NUMA node $LAUNCHING_NODE
-	numactl -N $LAUNCHING_NODE pg_/bin/pg_ctl start -o "-c max_connections=6000 -c shared_buffers=${SHARED_BUFFER_SIZE}MB -c max_wal_size=${WAL_BUFFER_SIZE}MB"
+	numactl -N $LAUNCHING_NODE pg_/bin/pg_ctl start -o "-c max_connections=6000 -c shared_buffers=${SHARED_BUFFER_SIZE}MB -c max_wal_size=${WAL_BUFFER_SIZE}MB" -w -t 60
 else
 	# echo No NUMA/numactl support found, starting server in older UMA way
 	SHARED_BUFFER_SIZE=`echo "$SYS_MEMORY * 0.25 / 1" | bc`
 	SHARED_BUFFER_SIZE=$(( $SHARED_BUFFER_SIZE < 8192 ? $SHARED_BUFFER_SIZE : 8192 ))
 	echo "Buffer size is ${SHARED_BUFFER_SIZE}MB" > $LOG_FILE
-	pg_/bin/pg_ctl start -o "-c max_connections=6000 -c shared_buffers=${SHARED_BUFFER_SIZE}MB"
+	pg_/bin/pg_ctl start -o "-c max_connections=6000 -c shared_buffers=${SHARED_BUFFER_SIZE}MB" -w -t 60
 fi
-# wait for server to start
-sleep 10
 
 # create test db
 pg_/bin/createdb pgbench
@@ -121,10 +121,14 @@ pg_/bin/pgbench -i $1 $2 -n pgbench
 
 # run the test 
 pg_/bin/pgbench --protocol=prepared -j $NUM_CPU_CORES $@ -n -T 120 -r pgbench >>$LOG_FILE 2>&1
+
 # drop test db
 pg_/bin/dropdb pgbench
+
 # stop server
 pg_/bin/pg_ctl stop
+
+rm -rf "$PGDATA"
 EOF
 chmod +x pgbench
 
