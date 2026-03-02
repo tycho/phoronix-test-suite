@@ -33,28 +33,12 @@
           <Value>8</Value>
         </Entry>
         <Entry>
-          <Name>16</Name>
-          <Value>16</Value>
-        </Entry>
-        <Entry>
           <Name>32</Name>
           <Value>32</Value>
         </Entry>
         <Entry>
-          <Name>64</Name>
-          <Value>64</Value>
-        </Entry>
-        <Entry>
-          <Name>128</Name>
-          <Value>128</Value>
-        </Entry>
-        <Entry>
           <Name>256</Name>
           <Value>256</Value>
-        </Entry>
-        <Entry>
-          <Name>512</Name>
-          <Value>512</Value>
         </Entry>
       </Menu>
     </Option>
@@ -67,16 +51,8 @@
           <Value>100</Value>
         </Entry>
         <Entry>
-          <Name>250</Name>
-          <Value>250</Value>
-        </Entry>
-        <Entry>
           <Name>500</Name>
           <Value>500</Value>
-        </Entry>
-        <Entry>
-          <Name>1000</Name>
-          <Value>1000</Value>
         </Entry>
       </Menu>
     </Option>
