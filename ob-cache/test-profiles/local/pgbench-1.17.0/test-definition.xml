@@ -38,19 +38,6 @@
           <Name>100</Name>
           <Value>100</Value>
         </Entry>
-        <Entry>
-          <Name>1000</Name>
-          <Value>1000</Value>
-        </Entry>
-        <Entry>
-          <Name>10000</Name>
-          <Value>10000</Value>
-        </Entry>
-        <Entry>
-          <Name>25000</Name>
-          <Value>25000</Value>
-          <Message>Intended for very large servers.</Message>
-        </Entry>
       </Menu>
     </Option>
     <Option>
@@ -65,30 +52,6 @@
         <Entry>
           <Name>50</Name>
           <Value>50</Value>
-        </Entry>
-        <Entry>
-          <Name>100</Name>
-          <Value>100</Value>
-        </Entry>
-        <Entry>
-          <Name>250</Name>
-          <Value>250</Value>
-        </Entry>
-        <Entry>
-          <Name>500</Name>
-          <Value>500</Value>
-        </Entry>
-        <Entry>
-          <Name>800</Name>
-          <Value>800</Value>
-        </Entry>
-        <Entry>
-          <Name>1000</Name>
-          <Value>1000</Value>
-        </Entry>
-        <Entry>
-          <Name>5000</Name>
-          <Value>5000</Value>
         </Entry>
       </Menu>
     </Option>
