@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.6-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>http://ftp.postgresql.org/pub/source/v18.1/postgresql-18.1.tar.bz2</URL>
+      <MD5>32f047dc587bbc90a4f68ea7b903485d</MD5>
+      <SHA256>ff86675c336c46e98ac991ebb306d1b67621ece1d06787beaade312c2c915d54</SHA256>
+      <FileName>postgresql-18.1.tar.bz2</FileName>
+      <FileSize>22423920</FileSize>
+      <PlatformSpecific>Linux, BSD, Solaris, MacOSX</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

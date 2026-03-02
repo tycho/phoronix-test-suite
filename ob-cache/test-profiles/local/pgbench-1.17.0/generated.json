@@ -1,0 +1,1 @@
+{"overview":[],"capabilities":{"shared_libraries":["libc.so.6"],"default_instructions":["MMX","SSE"],"max_instructions":["MMX","SSE"],"honors_cflags":"0","scales_cpu_cores":"0"}}
