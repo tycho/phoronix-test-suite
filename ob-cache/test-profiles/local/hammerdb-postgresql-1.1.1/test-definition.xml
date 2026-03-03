@@ -36,10 +36,6 @@
           <Name>32</Name>
           <Value>32</Value>
         </Entry>
-        <Entry>
-          <Name>256</Name>
-          <Value>256</Value>
-        </Entry>
       </Menu>
     </Option>
     <Option>
@@ -47,12 +43,12 @@
       <Identifier>warehouses</Identifier>
       <Menu>
         <Entry>
-          <Name>100</Name>
-          <Value>100</Value>
+          <Name>10</Name>
+          <Value>10</Value>
         </Entry>
         <Entry>
-          <Name>500</Name>
-          <Value>500</Value>
+          <Name>100</Name>
+          <Value>100</Value>
         </Entry>
       </Menu>
     </Option>
