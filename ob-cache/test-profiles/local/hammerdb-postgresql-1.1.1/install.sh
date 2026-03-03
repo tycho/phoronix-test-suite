@@ -136,16 +136,16 @@ diset connection pg_host localhost
 diset connection pg_port $PGPORT
 diset tpcc pg_superuser $PGUSER
 diset tpcc pg_driver timed
-diset tpcc pg_rampup 2
-diset tpcc pg_duration 6
-diset tpcc pg_vacuum true
+diset tpcc pg_rampup 0
+diset tpcc pg_duration 2
+diset tpcc pg_vacuum false
 vuset logtotemp 1
 loadscript
 puts "TEST STARTED"
 vuset vu $1
 vucreate
 vurun
-runtimer 500
+runtimer 140
 vudestroy
 puts "TEST COMPLETE"
 TCLEOF
