@@ -83,39 +83,41 @@ rm -rf postgresql-${version}/
 rm -rf pg_/doc/
 
 tar -xf HammerDB-4.5-Linux.tar.gz
-echo "#!/bin/sh
-PGUSER=`basename \$DEBUG_REAL_HOME`
-rm -rf \$HOME/pg_/data/*
-# initialize database with encoding and locale
-\$HOME/pg_/bin/initdb -D \$HOME/pg_/data/db -U \$PGUSER --encoding=SQL_ASCII --locale=C --wal-segsize=1024
+cat > hammerdb-postgresql<<"EOF"
+#!/bin/sh
+PGUSER=`basename $DEBUG_REAL_HOME`
 
-
-export LD_LIBRARY_PATH=\$HOME/pg_/lib/:\$LD_LIBRARY_PATH
-PGDATA=\$HOME/pg_/data/db/
+export LD_LIBRARY_PATH=$HOME/pg_/lib/:$LD_LIBRARY_PATH
+PGDATA=$HOME/pg_/data/db/
 PGPORT=7777
 export PGDATA
 export PGPORT
+
+# initialize database with encoding and locale
+rm -rf "$PGDATA"
+pg_/bin/initdb -D "$PGDATA" -U $PGUSER --encoding=SQL_ASCII --locale=C --wal-segsize=1024
+
 # start server
-SHARED_BUFFER_SIZE=\`echo \"\$SYS_MEMORY * 0.25 / 1\" | bc\`
-EFFECTIVE_CACHE_SIZE=\`echo \"\$SYS_MEMORY * 0.5 / 1\" | bc\`
-echo \"Shared buffer size is \${SHARED_BUFFER_SIZE}MB\" > \$LOG_FILE
-echo \"Effective cache size is \${EFFECTIVE_CACHE_SIZE}MB\" >> \$LOG_FILE
-pg_/bin/pg_ctl start -o \"-c autovacuum=true -c max_connections=1000 -c synchronous_commit=off -c shared_buffers=\${SHARED_BUFFER_SIZE}MB -c effective_cache_size=\${EFFECTIVE_CACHE_SIZE}MB -c max_wal_size=16384 -c min_wal_size=8192 -c wal_buffers=512MB -c max_files_per_process=4000\" >> \$LOG_FILE
-# wait for server to start
-sleep 10
+SHARED_BUFFER_SIZE=`echo "$SYS_MEMORY * 0.25 / 1" | bc`
+EFFECTIVE_CACHE_SIZE=`echo "$SYS_MEMORY * 0.5 / 1" | bc`
+echo "Shared buffer size is ${SHARED_BUFFER_SIZE}MB" > $LOG_FILE
+echo "Effective cache size is ${EFFECTIVE_CACHE_SIZE}MB" >> $LOG_FILE
+pg_/bin/pg_ctl start -o "-c autovacuum=true -c max_connections=1000 -c synchronous_commit=off -c shared_buffers=${SHARED_BUFFER_SIZE}MB -c effective_cache_size=${EFFECTIVE_CACHE_SIZE}MB -c max_wal_size=16384 -c min_wal_size=8192 -c wal_buffers=512MB -c max_files_per_process=4000" -w -t 60 >> $LOG_FILE
+
 pg_/bin/createdb postgres
 pg_/bin/psql --command '\du'
 pg_/bin/psql --command '\password postgres'
 
 cd ~/HammerDB-4.5
-echo \"puts \\\"SETTING CONFIGURATION\\\"
+cat > schemabuild.tcl <<TCLEOF
+puts "SETTING CONFIGURATION"
 dbset db pg
 diset connection pg_host localhost
-diset connection pg_port \$PGPORT
-diset tpcc pg_count_ware \$2
+diset connection pg_port $PGPORT
+diset tpcc pg_count_ware $2
 diset tpcc pg_partition false
-diset tpcc pg_num_vu \$1
-diset tpcc pg_superuser \$PGUSER
+diset tpcc pg_num_vu $1
+diset tpcc pg_superuser $PGUSER
 diset tpcc pg_superuserpass postgres
 diset tpcc pg_defaultdbase postgres
 diset tpcc pg_user tpcc
@@ -123,34 +125,36 @@ diset tpcc pg_pass tpcc
 diset tpcc pg_dbase tpcc
 print dict
 buildschema
-waittocomplete\" > schemabuild.tcl
-
+waittocomplete
+TCLEOF
 ./hammerdbcli auto schemabuild.tcl
-echo \"#vi psqlrun.tcl
-puts \\\"SETTING CONFIGURATION\\\"
+
+cat > psqlrun.tcl <<TCLEOF
+puts "SETTING CONFIGURATION"
 dbset db pg
 diset connection pg_host localhost
-diset connection pg_port \$PGPORT
-diset tpcc pg_superuser \$PGUSER
+diset connection pg_port $PGPORT
+diset tpcc pg_superuser $PGUSER
 diset tpcc pg_driver timed
 diset tpcc pg_rampup 2
 diset tpcc pg_duration 6
 diset tpcc pg_vacuum true
 vuset logtotemp 1
 loadscript
-puts \\\"TEST STARTED\\\"
-vuset vu \$1
+puts "TEST STARTED"
+vuset vu $1
 vucreate
 vurun
 runtimer 500
 vudestroy
-puts \\\"TEST COMPLETE\\\"\" > psqlrun.tcl
-
-./hammerdbcli auto psqlrun.tcl > \$LOG_FILE 2>&1
+puts "TEST COMPLETE"
+TCLEOF
+./hammerdbcli auto psqlrun.tcl > $LOG_FILE 2>&1
 
 cd ~
+
 # stop server
-pg_/bin/pg_ctl stop
-sleep 3
-rm -rf \$HOME/pg_/data/*" > hammerdb-postgresql
+pg_/bin/pg_ctl stop -t 60
+rm -rf "$PGDATA"
+EOF
 chmod +x hammerdb-postgresql
